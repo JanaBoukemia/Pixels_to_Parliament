@@ -1,0 +1,56 @@
+---
+title: "Downloading Instagram Images"
+author: "Jana Boukemia"
+date: "2024-09-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+# Parliamentary Sessions
+
+## Session 2019–21
+- **Dates:** 17 December 2019 – 29 April 2021  
+  COVID from end of March 2020.
+
+## Session 2021–22
+- **Dates:** 11 May 2021 – 28 April 2022  
+  COVID with Lockdowns: In February 2022, Johnson announced he was lifting the last domestic Covid restrictions in England, including the requirement for people with Covid-19 to self-isolate. The PM told the House of Commons that the country was “moving from government restrictions to personal responsibility.”
+
+## Session 2022-23
+- **Dates:** 10 May 2022 – 26 October 2023
+
+## Session 2023-24
+- **Dates:** 7 November 2023 – today
+
+# Data Sheet
+
+1. **Update the UK data sheet**
+   - Update the UK data sheet using Clint's script.
+   - For `UK_api_missing`, add to Crowdtangle.
+   - Print new sheet: `UK`.
+   - Update the Instagram accounts and add them to Crowdtangle.
+  
+2. **Download EDMs**
+   - **Parl Session 2020-22**
+     - First Date: 2019-12-19 21:45:12
+     - Last Date: 2024-02-09 11:41:46
+     - Add variable for `Parl_Session` 2019-2021.
+  
+   - **Parl Session 2022-23**
+     - First Date: 2022-05-10
+     - Plus half a year: 2022-11-10: 557
+     - Plus one year: 2023-05-10: 574
+     - Last Date: 2023-10-26: 473
+       - **TOTAL:** 1,604
+     - Add variable for `Parl_Session` 2022-2023.
+
+3. **Use "Download Images using R" Script**
+4. **Use "Check undownloaded files" Script:** html files.
+5. **Use "Subset undownloaded posts".**
+6. **Download missing files manually.**
+7. **Use "Organize Files 2022_23"** to merge `parl_id` to `instagram_id`, rename rows.
